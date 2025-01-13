@@ -36,7 +36,65 @@
 <!-- build:css main.min.css -->
 		<link rel="stylesheet" href="css/main.css">
 	<!-- /build -->
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f0c2;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+ .container {
+    background: #f8f0c2;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%; /* Lebar default untuk desktop */
+    margin: 20px auto;
+}
+#footer-wrapper{text-align:center;overflow:hidden;background:0 0;margin:10px 0 0;padding:0}
+#footer-last{overflow:hidden;background:#333;border:1px solid #fff;padding:5px 5px;margin:15px 0 0}
+.vileftcredit {float:left;margin:10px;color:#fff;font-size:13px;font-family:'Open Sans';font-weight:400;}
+#virightcredit {float:right;margin:10px;color:#999;font-size:13px;font-family:'Open Sans';font-weight:400;}
+.vileftcredit a,#virightcredit a {color:#fff;text-decoration:none;}
+.vileftcredit a:hover,#virightcredit a:hover {color:#fff;text-decoration:none;}
+.footer {font-weight:400;padding-bottom:.2em;}
+
+/* Media query untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Lebar 100% untuk ponsel */
+        margin: 10px 0; /* Mengurangi margin untuk ponsel */
+    }
+}
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+ </style>
  <script>     
         // Fungsi untuk mendapatkan IP address pengunjung (berbasis server)
         async function getVisitorIP() {
@@ -122,6 +180,13 @@ let anonymityLevel = 100;
 </script>   
 </head>
 <body>
+	<div class="navbar">
+   <a href="https://gamezzz.pages.dev/">Home</a>
+   <a href="https://gamezzz.pages.dev/about">About</a>
+     <a href="https://gamezzz.pages.dev/privacy">Privacy</a>
+  <a href="https://gamezzz.pages.dev/disclaimer">Disclaimer</a> 
+<a href="https://gamezzz.pages.dev/contact">Contact</a> 
+</div>
  <!-- build:remove -->
         <script src="http://localhost:35729/livereload.js"></script>  
     <!-- /build -->
